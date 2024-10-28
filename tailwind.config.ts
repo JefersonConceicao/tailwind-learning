@@ -1,19 +1,23 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss'
 
 const config: Config = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  content: ['./src/**/*.tsx'],
   theme: {
     extend: {
+      gridTemplateColumns: {
+        app: 'minmax(18rem, 28rem) 1fr',
+        form: 'minmax(7.5rem, 17.5rem) minmax(25rem, 1fr) minmax(0, 15rem)',
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        violet: {
+          25: '#fcfaff',
+        },
+      },
+      borderWidth: {
+        6: '6px',
       },
     },
   },
   plugins: [],
-};
-export default config;
+}
+export default config
