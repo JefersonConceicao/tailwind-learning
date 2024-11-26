@@ -22,14 +22,13 @@ export function Root(props: RootProps) {
   const id = useId()
   const [files, setFiles] = useState<File[]>([])
 
-  function onFilesSelected(files: File[], multiple: boolean){
-    if(multiple){
-      setFiles(state => [...state, ...files])
-    }else{
+  function onFilesSelected(files: File[], multiple: boolean) {
+    if (multiple) {
+      setFiles((state) => [...state, ...files])
+    } else {
       setFiles(files)
     }
   }
-
 
   return (
     <FileInputContext.Provider value={{ id, files, onFilesSelected }}>
