@@ -17,7 +17,8 @@
     "next": "14.2.15",
     "react": "^18",
     "react-dom": "^18",
-    "tailwind-next": "file:"
+    "tailwind-next": "file:",
+    "tailwind-variants": "^0.3.0"
   },
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.2.2",
